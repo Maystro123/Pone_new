@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body{
+    height:900px;
+    background: silver;
+  }
+    span{
+      color:green;
+     }
+     .contenaire{
+    background:#000;
+    border-radius:10px;
+    height:600px;
+    width:100%;
+     }
+     p{
+       color:red;
+     }
+     b{
+       color:Yellow;
+       text-align: center;
+       margin-left: 50px;
+     }
+     .arr{
+       border-radius:10px;
+       background:#ffffff;
+       
+     }
+i{
+ color:blue;
+}
+     </style>
+</head>
+<body>
+  
+  <div class="arr">
+   <i>Ici vous pouvez,voir certains paramètres caché de votre téléphone !</i>
+   <br>
+  <div class="contenaire">
+    <b>⚙️ Paramètres du téléphone ⚙️</b>
+    <p>Plateforme :<span id="pla"></span></p>
+    <br>
+    <p>AppName:<span id="app"></span></p>
+    <br>
+  <p>UserAgent:<span id="agent"></span></p>
+  <br>
+  <p>Online:<span id="online"></span></p>
+  <br>
+    <p>Screen-width:<span id="width"></span></p>
+    <br>
+      <p>screen-height:<span id="height"></span></p>
+      <br>
+        <p>Language :<span id="lg"></span></p>
+  </div> 
+  </div>
+  
+  <a href="https://tiktok.com/@diablo_404.0">Soutenir le créateur du site en s'abonnant !!🍀</a>
+  <script>
+  confirm("voir les informations de votre téléphone ?")
+  
+  
+  
+   document.getElementById("pla").innerHTML =
+      navigator.platform;
+      
+          document.getElementById("app").innerHTML =
+      navigator.appName;
+      
+      document.getElementById("agent").innerHTML =
+      navigator.userAgent;
+      
+      document.getElementById("lg").innerHTML =
+      navigator.language;
+      
+      document.getElementById("online").innerHTML =
+      navigator.onLine;
+      
+      document.getElementById("width").innerHTML =
+     screen.width;
+      document.getElementById("height").innerHTML =
+      screen.height;
+      
+      
+      
+  </script>
+</body>
+</html>
